@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .liked{
+                color: red;
+            }
+        </style>
+        <title>Humsafar</title>
+        <link rel="stylesheet" href="../assets/css/user-page.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Varela+Round&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Secular+One&family=Texturina:wght@200&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="display_post_data()">
+
+
+        <!--  DO NOT TOUCH ... COPY FOR ALL ... ONLY CHANGE LINKS   -->
+        
+
+        <div id="overlay-cnt">
+            <div id="close-btn-cnt"><i id="close-btn" class="fas fa-times"></i></div>
+            <br><br>
+            <li class="overlay-lnks" >WELCOME !!</li>
+            <div id="sub-overlay-cnt">
+                <div class="overlay-lnks-cnt">
+                    <a href="/profile"><li class="overlay-lnks">Profile</li></a>
+                    <br>
+                    <a href="/posts"><li class="overlay-lnks">Your Posts</li></a>
+                    <br>
+                    <a href="/about-us"><li class="overlay-lnks">About Us</li></a>
+                    <br>
+                    <a href="/contact-us"><li class="overlay-lnks">Contact Us</li></a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--  DO NOT TOUCH.... COPY FOR ALL  -->
+        
+
+        <div class="header-cnt">
+            <div class="overlay-btn-cnt"><i id="show-overlay-btn" class="fas fa-outdent"></i></div>
+            <div class="search-engine-cnt">
+                <input id="search_input" autocomplete="home" onfocus="search_engine()" type="search" placeholder="Search place ...">
+                <div id="result-cnt">
+                    <div id="geo-data"></div>
+                </div>
+            </div>
+            <div class="compose-btn-cnt"><a href="/compose"><i id="write-post-btn" class="fas fa-user-edit"></i></a></div>
+        </div>
+        <hr>
+
+
+<!-- ####################################################################################### -->
+
+<!--                    D A T A                 SECTION                                      -->
+
+<!--                    THIS     SECTION     IS      COMPLETED                               -->
+
+
+
+        <h1 id="title" style="text-align: center;font-family: 'Satisfy', cursive;"></h1>
+        <div id="outer-post-cnt">
+
+            <div class="inner-post-cnt">
+                <div class="inner-post-map" id="googleMap"></div>         <!--  G-MAP   -->
+                <div class="inner-post-text">
+                    <h2><u>How I Reached There ?</u></h2><br>
+                    <h3>Things to remember...</h3><br>
+                    <p id="HIRT"></p>
+                </div>
+            </div>
+            
+            <div id="inner-img-cnt"></div>
+
+            <div class="inner-post-text-2">
+                <h1><u>Answer Yourself</u></h1><br>
+                <div id="additional"></div>
+            </div>
+            <br>
+            <p>Author :- <i id="author" style="text-align:inherit ;font-family: 'Satisfy', cursive;"></i></p>
+            
+        </div> 
+        
+        <div>
+            <div>
+                <i title="Views" class="fas fa-eye"></i> 
+            </div>
+            <div>
+                <button title="like" style="background-color: green;" id="like-btn" disabled><i class="fas fa-thumbs-up"></i></button>
+            </div>
+            <div>
+                <button title="report" style="background-color: red;" id="report-btn" disabled>Report Post</button>
+            </div>
+        </div>
+
+        <hr>
+        
+        
+<!-- ############################################################################################# -->
+        
+<!--                    C O M M E N T                 SECTION                                      -->
+
+<!--                       add an option to "like this post"                           -->
+
+
+        <div id="comment-section-cnt">
+            <div id="add-comment"><input id="cmmnt_inpt" style="width: 400px;" type="text" disabled><button onclick="window.location.href='/login'"">Add Comment</button></div>
+            <br><br><br>
+
+            <div id="show-comment"></div>
+
+            <div><input id="reply_inpt" type="text" required disabled><button id="submit_reply" disabled>Submit</button></div>                      
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="../assets/js/post-page-visitors.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaP0cvhqJUuk8spFCLewsypFLny31OYZs&callback=myMap"></script>
+        <script src="https://kit.fontawesome.com/12affb393a.js" crossorigin="anonymous"></script>
+    </body>
+</html>

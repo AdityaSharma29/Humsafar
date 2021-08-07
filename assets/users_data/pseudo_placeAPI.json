@@ -1,0 +1,297 @@
+[
+    {
+        "location": "AGRA",
+        "lat": 101,
+        "lng": 101
+    },
+    {
+        "location": "ALIBAUG",
+        "lat": 102,
+        "lng": 102
+    },
+    {
+        "location": "AULI",
+        "lat": 103,
+        "lng": 103
+    },
+    {
+        "location": "BANDIPUR",
+        "lat": 104,
+        "lng": 104
+    },
+    {
+        "location": "BHARATPUR",
+        "lat": 105,
+        "lng": 105
+    },
+    {
+        "location": "BIKANER",
+        "lat": 106,
+        "lng": 106
+    },
+    {
+        "location": "BIR",
+        "lat": 107,
+        "lng": 107
+    },
+    {
+        "location": "CHIKMAGALUR",
+        "lat": 108,
+        "lng": 108
+    },
+    {
+        "location": "COORG",
+        "lat": 109,
+        "lng": 109
+    },
+    {
+        "location": "CORBETT NATIONAL PARK",
+        "lat": 110,
+        "lng": 110
+    },
+    {
+        "location": "DALHOUSIE",
+        "lat": 111,
+        "lng": 111
+    },
+    {
+        "location": "DANDELI",
+        "lat": 112,
+        "lng": 112
+    },
+    {
+        "location": "DEHRADUN",
+        "lat": 113,
+        "lng": 113
+    },
+    {
+        "location": "DESERT OF JAISALMER",
+        "lat": 114,
+        "lng": 114
+    },
+    {
+        "location": "DHARAMSHALA",
+        "lat": 115,
+        "lng": 115
+    },
+    {
+        "location": "DUDHSAGAR FALLS",
+        "lat": 116,
+        "lng": 116
+    },
+    {
+        "location": "GHATS IN VARANASI",
+        "lat": 117,
+        "lng": 117
+    },
+    {
+        "location": "GOA",
+        "lat": 118,
+        "lng": 118
+    },
+    {
+        "location": "GOKARNA",
+        "lat": 119,
+        "lng": 119
+    },
+    {
+        "location": "GRAND ISLAND",
+        "lat": 120,
+        "lng": 120
+    },
+    {
+        "location": "GULMARG",
+        "lat": 121,
+        "lng": 121
+    },
+    {
+        "location": "HAMPI",
+        "lat": 122,
+        "lng": 122
+    },
+    {
+        "location": "HARIDWAR",
+        "lat": 123,
+        "lng": 123
+    },
+    {
+        "location": "JAIPUR",
+        "lat": 124,
+        "lng": 124
+    },
+    {
+        "location": "JAMMU AND KASHMIR",
+        "lat": 125,
+        "lng": 125
+    },
+    {
+        "location": "JODHPUR",
+        "lat": 126,
+        "lng": 126
+    },
+    {
+        "location": "KABINI",
+        "lat": 127,
+        "lng": 127
+    },
+    {
+        "location": "KAMSHET",
+        "lat": 128,
+        "lng": 128
+    },
+    {
+        "location": "KARNATAKA",
+        "lat": 129,
+        "lng": 129
+    },
+    {
+        "location": "KASHMIR VALLEY",
+        "lat": 130,
+        "lng": 130
+    },
+    {
+        "location": "KASOL",
+        "lat": 131,
+        "lng": 131
+    },
+    {
+        "location": "KOLAD",
+        "lat": 132,
+        "lng": 132
+    },
+    {
+        "location": "LADAKH",
+        "lat": 133,
+        "lng": 133
+    },
+    {
+        "location": "LONAVALA",
+        "lat": 134,
+        "lng": 134
+    },
+    {
+        "location": "MAHABALESHWAR",
+        "lat": 135,
+        "lng": 135
+    },
+    {
+        "location": "MAHARASHTRA",
+        "lat": 136,
+        "lng": 136
+    },
+    {
+        "location": "MANALI",
+        "lat": 137,
+        "lng": 137
+    },
+    {
+        "location": "MATHURA",
+        "lat": 138,
+        "lng": 138
+    },
+    {
+        "location": "MOUNT ABU",
+        "lat": 139,
+        "lng": 139
+    },
+    {
+        "location": "MUMBAI",
+        "lat": 140,
+        "lng": 140
+    },
+    {
+        "location": "MYSORE",
+        "lat": 141,
+        "lng": 141
+    },
+    {
+        "location": "NAINITAL",
+        "lat": 142,
+        "lng": 142
+    },
+    {
+        "location": "NORTH GOA",
+        "lat": 143,
+        "lng": 143
+    },
+    {
+        "location": "PANCHGANI",
+        "lat": 144,
+        "lng": 144
+    },
+    {
+        "location": "PUNE",
+        "lat": 145,
+        "lng": 145
+    },
+    {
+        "location": "PUSHKAR",
+        "lat": 146,
+        "lng": 146
+    },
+    {
+        "location": "RAJASTHAN",
+        "lat": 147,
+        "lng": 147
+    },
+    {
+        "location": "RANTHAMBORE",
+        "lat": 148,
+        "lng": 148
+    },
+    {
+        "location": "RISHIKESH",
+        "lat": 149,
+        "lng": 149
+    },
+    {
+        "location": "ROOPKUND LAKE",
+        "lat": 150,
+        "lng": 150
+    },
+    {
+        "location": "SAKLESHPUR",
+        "lat": 151,
+        "lng": 151
+    },
+    {
+        "location": "SHIMLA",
+        "lat": 152,
+        "lng": 152
+    },
+    {
+        "location": "SOUTH GOA",
+        "lat": 153,
+        "lng": 153
+    },
+    {
+        "location": "UDAIPUR",
+        "lat": 154,
+        "lng": 154
+    },
+    {
+        "location": "UTTAR PRADESH",
+        "lat": 155,
+        "lng": 155
+    },
+    {
+        "location": "UTTARANCHAL",
+        "lat": 156,
+        "lng": 156
+    },
+    {
+        "location": "VALLEY OF FLOWERS",
+        "lat": 157,
+        "lng": 157
+    },
+    {
+        "location": "HIMACHAL PRADESH",
+        "lat": 158,
+        "lng": 158
+    },
+    {
+        "location": "KHAJJIAR",
+        "lat": 159,
+        "lng": 159
+    }
+]

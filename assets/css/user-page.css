@@ -1,0 +1,148 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #bbbfca;
+}
+
+#overlay-cnt {
+  display: none;
+  text-align: center;
+  width: 50%;
+  height: 100vh;
+  color: white;
+  background-color: black;
+  border-radius: 0 10px 10px 0;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+}
+
+#sub-overlay-cnt {
+  height: 80vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#close-btn-cnt {
+  position: absolute;
+  font-size: 30px;
+  top: 5px;
+  right: 10px;
+}
+
+.overlay-lnks {
+  font-size: 30px;
+  list-style-type: none;
+}
+
+.header-cnt {
+  margin: 5px 0px;
+  padding: 5px 0px;
+  width: 100%;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+}
+
+#show-overlay-btn, #write-post-btn {
+  font-size: 25px;
+  color: #bbbfca;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+#search_input {
+  border: 2px solid gray;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 20px;
+  width: 95%;
+  height: 40px;
+}
+
+#search_input:focus {
+  outline: none;
+}
+
+#result-cnt {
+  background-color: #9ea1a8;
+  padding: 3px;
+  width: 57%;
+  margin-left: 1.5%;
+  position: absolute;
+  z-index: 999;
+}
+
+#result-cnt button {
+  border: none;
+  font-size: 15px;
+  background-color: inherit;
+  text-align: left;
+  width: 100%;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////*/
+#outer-post-cnt {
+  width: 100%;
+  padding: 50px;
+}
+
+.inner-post-cnt {
+  display: inline-block;
+}
+
+.inner-post-text {
+  width: 100%;
+}
+
+.inner-post-map {
+  float: right;
+  height: 300px;
+  width: 30%;
+}
+
+#inner-img-cnt {
+  margin: 20px 0px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 250px;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+#comment-section-cnt {
+  padding: 50px;
+}
+
+#add-comment {
+  width: 650px;
+  border: 2px solid gray;
+}
+
+#show-comment {
+  width: 100%;
+}
+
+.inner_cmmnt_cnt {
+  margin-left: 50px;
+}
+
+.reply-section {
+  margin-left: 50px;
+}
+/*# sourceMappingURL=user-page.css.map */

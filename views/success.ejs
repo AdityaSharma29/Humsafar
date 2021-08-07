@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Humsafar</title>   
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+            }
+            .cont{
+                display: flex;
+                justify-content: center;
+            }
+            #outline{
+                position: relative;
+                top: 80px;
+                width: 200px;
+                height: 200px;
+                border: 7px solid rgb(48, 224, 48);
+                border-radius: 50%;
+                animation-name: back;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            #downLine{
+                position: absolute;
+                top: 110px;
+                left: 43px;
+                transform: rotate(40deg);
+                border: 5px solid rgb(48, 224, 48);
+                animation-name: down;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            #upLine{
+                position: absolute;
+                top: 90px;
+                left: 62px;
+                transform: rotate(310deg);
+                border: 5px solid rgb(48, 224, 48);
+                animation-name: up;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            #text-container{
+                text-align: center;
+                border-radius: 10px;
+                width: 250px;
+                padding: 3px;
+                position: relative;
+                top : 130px;
+                animation-name: toggle;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes back{
+                from { background-color: white; }
+                to { background-color: rgb(48, 224, 48); }
+            }
+            @keyframes down{
+                from { width: 0px; opacity: 0;}
+                to { width: 45px; opacity: 1; border-color: white;}
+            }
+            @keyframes up{
+                from { width: 0px; opacity: 0; }
+                to { width: 100px; opacity: 1; border-color: white; }
+            }
+            @keyframes toggle{
+                0% { background-color: white; color: rgb(48, 224, 48); }
+                50% { background-color: rgb(48, 224, 48); color: white;}
+                100% { background-color: white; color: rgb(48, 224, 48); }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+            <div id="outline">
+                <div id="downLine"></div>
+                <div id="upLine"></div>
+            </div>
+        </div>
+        <div class="cont">
+            <div id="text-container"><h2>Congrats !!</h2></div>
+        </div>
+    </body>
+</html>

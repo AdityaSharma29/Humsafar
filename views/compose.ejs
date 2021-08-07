@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Humsafar</title>
+        <link rel="stylesheet" href="../assets/css/compose.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Varela+Round&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Secular+One&family=Texturina:wght@200&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <!--  DO NOT TOUCH ... COPY FOR ALL ... CHANGE LINKS ALSO   -->
+        
+        <div class="hide-overlay" id="overlay-cnt">
+            <a id="close-btn-cnt"><i id="close-btn" class="fas fa-times"></i></a>
+            <br><br>
+            <li class="overlay-lnks" >WELCOME !!</li>
+            <div id="sub-overlay-cnt">
+                <div class="overlay-lnks-cnt">
+                    <a class="overlay-lnks" href="/profile">Profile</a>
+                    <a class="overlay-lnks" href="/about-us">About Us</a>
+                    <a class="overlay-lnks" href="/contact-us">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--  DO NOT TOUCH   -->
+
+        <div class="header-cnt">
+
+            <div class="overlay-btn-cnt"><i id="show-overlay-btn" class="fas fa-outdent"></i></div>
+            
+            <div><h1>Be Creative !!</h1></div>
+            <!--          below is the home button instead of compose              -->
+
+            <div class="compose-btn-cnt"><a href="/"><i id="write-post-btn" class="fas fa-home"></i></a></div>
+        </div>
+        <hr>
+
+        <!--*****************************************************************************************************************************-->
+
+
+        <form action="/insert_post_data"  method="POST" enctype="multipart/form-data">
+            <div id="compose-cnt">
+
+            <!-- location, coordinates, HIRT, images, additional queries -->
+
+
+                        
+                <div id="search-engine-cnt">
+                    <div>
+                        <input name="place_name" id="search_input" autocomplete="home" onfocus="search_engine()" type="search" placeholder="Search place ..." required="true">
+                        <div id="result-cnt">
+                            <div id="geo-data"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lat-lng-cnt">
+
+                    <div id="lat-cnt">
+                        <label for="location_name">lat</label>
+                        <input type="number" name="latitude" id="latitude" readonly="readonly"><br>
+                    </div>
+
+                    <div id="lng-cnt">
+                        <label for="location_name">lng</label>
+                        <input type="number" name="longitude" id="longitude" readonly="readonly"><br><br>
+                    </div>
+                </div>
+                        
+                <div id="HIRT-CNT">
+
+                    <label for="location_name">HIRT</label><br>
+                    <textarea type="text" cols="100" rows="10" name="HIRT" required></textarea><br><br>
+                        
+                </div>
+
+                <div id="img-input-cnt">
+
+                    <label for="location_name">Upload images</label>
+                    <input type="file" name="file" multiple><br><br>
+                </div>
+
+                <div id="additional_section">
+
+                    <h2>Wanna share More ... </h2>
+                    <h3>click on the "+" button below</h3>
+                    <div id="additional_container"></div><br>
+                    <button type="button" id="add_button" onclick="add_additional_input_fields()">+</button><br><br>
+                </div>
+
+                <div id="controller-btn">
+
+                    <button type="button" onclick="window.location.href='/'">Cancel</button>
+                    <input type="submit">
+                </div>
+            </div>
+
+        </form>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="../assets/js/compose.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaP0cvhqJUuk8spFCLewsypFLny31OYZs&callback=myMap"></script>
+        <script src="https://kit.fontawesome.com/12affb393a.js" crossorigin="anonymous"></script>
+
+    </body>
+</html>

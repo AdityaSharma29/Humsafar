@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Humsafar</title>
+        <link rel="stylesheet" href="../assets/css/login.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body style="background-color: #bbbfca;">
+        <div id="container">
+            <div style="text-align: center;"><h2>Register</h2></div><hr>
+            <div>
+                <form method="POST" target="_blank" action="/insert_user">
+                    <br><p id="warning" style=" text-align: center;color: red;font-size: 10px;word-spacing: 6px;letter-spacing: 4px;"> </p>
+                    
+                    <label for="username"><b>Username</b> &nbsp; : &nbsp; &nbsp; </label>
+                    <input  name="user" id="username" type="text" minlength="7" maxlength="15" required><br><br><br>
+                    
+                    <label for="phoneNo"><b>Phone No.</b>&nbsp;&nbsp; : &nbsp; &nbsp;+91</label>
+                    <input name="pn" id="phoneNo" type="tel" placeholder="888 888 8888" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10" required><br><br><br>
+                    
+                    <label for="password"><b>Password</b>&nbsp;&nbsp; : &nbsp; &nbsp; </label>
+                    <input name="pass" id="password" type="password" minlength="7" maxlength="20" required><br><br>
+                    
+                    <input id="submit" class="register" style="float: right;" value="Submit" type="submit"><br><br>
+                </form>
+            </div><hr>
+            <div style="text-align: center;"><p><b>Already</b> have an account ?&nbsp; <a style="text-decoration: none;" href="login">Sign in </a></p></div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="../assets/js/auth-script.js"></script>
+    </body>
+</html>

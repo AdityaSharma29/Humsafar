@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Humsafar</title>
+        <link rel="stylesheet" href="../assets/css/login.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-color: #bbbfca;">
+        <div id="container">
+            <div style="text-align: center;"><h2>Login</h2></div><hr>
+            <div>
+                <form method="POST" action="/validate">
+                    <br><br>
+                    <label for="username"><b>Username</b> &nbsp; : &nbsp; &nbsp; </label>
+                    <input name="user" id="username" type="text" required><br><br>
+                    <label for="password"><b>Password</b>&nbsp;&nbsp; : &nbsp; &nbsp; </label>
+                    <input name="pass" id="password" type="password" required><br><br><br>
+                    <input name="remember" type="checkbox" checked><b>R</b>emember <b>M</b>e<br>
+                    <input id="submit" style="float: right;" value="Submit" type="submit"><br><br><br>
+                </form>
+            </div><hr>
+            <div style="text-align: center;"><p><b>Don't</b> have an account ?&nbsp; <a style="text-decoration: none;" href="register">Sign up </a></p></div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="../assets/js/auth-script.js"></script>
+    </body>
+</html>

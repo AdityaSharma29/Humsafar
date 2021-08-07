@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Humsafar</title>
+
+        <link rel="stylesheet" href="../../assets/css/edit-profile.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Varela+Round&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Secular+One&family=Texturina:wght@200&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="edit_profile_data(true)">
+        <!--  DO NOT TOUCH ... COPY FOR ALL ... CHANGE LINKS ALSO   -->
+        <div id="overlay-cnt">
+            <div id="close-btn-cnt"><i id="close-btn" class="fas fa-times"></i></div>
+            <br><br>
+            <li class="overlay-lnks" >WELCOME !!</li>
+            <div id="sub-overlay-cnt">
+                <div class="overlay-lnks-cnt">
+                    <a href="/profile"><li class="overlay-lnks">Profile</li></a>
+                    <br>
+                    <a href="/posts"><li class="overlay-lnks">Your Posts</li></a>
+                    <br>
+                    <a href="/about-us"><li class="overlay-lnks">About Us</li></a>
+                    <br>
+                    <a href="/contact-us"><li class="overlay-lnks">Contact Us</li></a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--  DO NOT TOUCH   -->
+
+        <div class="header-cnt">
+            <div class="overlay-btn-cnt"><i id="show-overlay-btn" class="fas fa-outdent"></i></div>
+            <div class="search-engine-cnt">
+                <input id="search_input" autocomplete="home" onfocus="search_engine()" type="search" placeholder="Search place ...">
+                <div id="result-cnt">
+                    <div id="geo-data"></div>
+                </div>
+            </div>
+            <!--          below is the home button instead of compose              -->
+
+            <div class="compose-btn-cnt"><a href="/"><i id="write-post-btn" class="fas fa-home"></i></a></div>
+        </div>
+        <hr>
+
+<!--*****************************************************************************************************************************-->
+
+        <div id="profile-container">
+
+            <form action="/update_profile"  method="POST" enctype="multipart/form-data">
+                <div id="info-container">
+                    
+                    <div>
+
+                        <div id="profile-image"></div>
+                        <input id="image_inpt"  name="file" type="file" oninput="green()">
+                        
+                    </div>
+                    
+                    <div id="profile-data">
+                        
+                        <h1 id="username"></h1>
+                        <p id="bio"><textarea name="bio" cols="80" rows="10" id="bio_inpt" type="text" required></textarea></p>
+                        <div id="other_links"><i id="instagram" class="fab fa-instagram"></i><textarea name="instagram" rows="1" cols="50" id="instagram_inpt" type="text" required></textarea><i id="linkedin" class="fab fa-linkedin-in"></i><textarea name="linkedin" cols="50" rows="1" id="linkedin_inpt" type="text" required></textarea></div>
+                    </div>
+                    
+                    
+                </div>
+                <input type="submit">
+            </form>
+            <button id="remove_image" type="button" onclick="remove_image()" disabled>Remove this Image</button>
+            <button onclick="window.history.back()">Cancel Editing</button>
+        
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="../../assets/js/edit-profile.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaP0cvhqJUuk8spFCLewsypFLny31OYZs&callback=myMap"></script>
+        <script src="https://kit.fontawesome.com/12affb393a.js" crossorigin="anonymous"></script>
+
+    </body>
+</html>
