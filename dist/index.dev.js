@@ -34,6 +34,9 @@ var upload_profile_image = multer({
     }
   })
 });
+
+require('dotenv').config();
+
 var app = express();
 app.set('view engine', 'ejs');
 app.use(bodyParser.json());
@@ -483,6 +486,6 @@ app.post('/post/:post_id/add-reply', function (req, res) {
     }
   });
 });
-app.listen(3000, function () {
+app.listen(process.env.PORT, function () {
   console.log("Running on 3000");
 });

@@ -22,6 +22,7 @@ let upload_profile_image = multer({
         }
     })
 })
+require('dotenv').config();
 const app = express();
 
 
@@ -490,8 +491,7 @@ app.post('/post/:post_id/add-reply', (req, res) => {
 })
 
 
-
-app.listen(3000,() => {
+app.listen( process.env.PORT, () => {
     console.log("Running on 3000");
 })
 
