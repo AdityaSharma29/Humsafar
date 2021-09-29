@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #bbbfca;
+  background-color: #00587A;
 }
 
 @-webkit-keyframes show {
@@ -60,8 +60,8 @@ body {
   top: 0;
   -webkit-animation-name: show;
           animation-name: show;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .hide-overlay {
@@ -78,8 +78,8 @@ body {
   top: 0;
   -webkit-animation-name: hide;
           animation-name: hide;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 #sub-overlay-cnt {
@@ -94,9 +94,11 @@ body {
 }
 
 #sub-overlay-cnt a {
-  font-size: 60px;
+  font-size: 40px;
   display: block;
   margin: 5px;
+  text-decoration: none;
+  color: white;
 }
 
 #close-btn-cnt {
@@ -111,11 +113,21 @@ body {
   list-style-type: none;
 }
 
+@media (max-device-width: 600px) {
+  .show-overlay {
+    width: 100%;
+  }
+  #home-post-cnt {
+    padding: 40px 20px 40px 20px;
+  }
+}
+
 .header-cnt {
   margin: 5px 0px;
   padding: 5px 0px;
   width: 100%;
   text-align: center;
+  background-color: #008891;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: justify;
@@ -136,7 +148,7 @@ body {
 #search_input {
   border: 2px solid gray;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: #E7E7DE;
   font-size: 20px;
   width: 95%;
   height: 40px;
@@ -168,10 +180,17 @@ body {
   padding: 50px;
 }
 
+@media (max-device-width: 600px) {
+  #home-post-cnt {
+    padding: 40px 20px 40px 20px;
+  }
+}
+
 .sub-post-cnt {
   padding: 5px;
-  border: 2px solid gray;
-  border-radius: 3px;
+  border: 2px solid #0F3057;
+  background-color: #008891;
+  border-radius: 10px;
 }
 
 .post-review-cnt {

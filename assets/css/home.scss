@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
 }
-body{ background-color: #bbbfca; }
+body{ background-color: #00587A; }
 
 @keyframes show {
     from { width: 0; }
@@ -18,7 +18,6 @@ body{ background-color: #bbbfca; }
     }
 }
 
-//  ISSUE 
 
 .show-overlay{
     display: block;
@@ -33,7 +32,7 @@ body{ background-color: #bbbfca; }
     position: fixed;
     top: 0;
     animation-name: show;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 .hide-overlay{
@@ -49,7 +48,7 @@ body{ background-color: #bbbfca; }
     position: fixed;
     top: 0;
     animation-name: hide;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 #sub-overlay-cnt{
@@ -58,11 +57,15 @@ body{ background-color: #bbbfca; }
     display: grid;
     grid-template-columns: auto;
     align-content: center;
-    a{
-        font-size: 60px;
-        display: block;
-        margin: 5px;
-    }
+    
+}
+
+#sub-overlay-cnt a{
+    font-size: 40px;
+    display: block;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
 }
 
 #close-btn-cnt{
@@ -76,7 +79,16 @@ body{ background-color: #bbbfca; }
     list-style-type: none;
 }
 
+@media (max-device-width:600px){
 
+    .show-overlay{
+        width:100%;
+    }
+    #home-post-cnt{
+        padding: 40px 20px 40px 20px;
+    }
+
+}
 
 
 .header-cnt{
@@ -84,6 +96,7 @@ body{ background-color: #bbbfca; }
     padding: 5px 0px;
     width: 100%;
     text-align: center;
+    background-color: #008891;
     display: grid;
     justify-content: space-between;
     grid-template-columns: 20% 60% 20%;
@@ -102,7 +115,7 @@ body{ background-color: #bbbfca; }
 
     border: 2px solid gray;
     border-radius: 5px;
-    background-color: transparent;
+    background-color: #E7E7DE;
     font-size: 20px;
     width: 95%;
     height: 40px;
@@ -132,12 +145,21 @@ body{ background-color: #bbbfca; }
 
 #home-post-cnt{
     padding: 50px;
-
 }
+
+@media (max-device-width:600px){
+
+    #home-post-cnt{
+        padding: 40px 20px 40px 20px;
+    }
+    
+}
+
 .sub-post-cnt{
     padding: 5px;
-    border: 2px solid gray;
-    border-radius: 3px;
+    border: 2px solid #0F3057;
+    background-color: #008891;
+    border-radius: 10px;
 }
 
 .post-review-cnt{
