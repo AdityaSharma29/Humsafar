@@ -1,24 +1,14 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  box-sizing: border-box;
+  user-select: none;
 }
 
 body {
   background-color: #00587A;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #username, #password, #phoneNo {
@@ -36,8 +26,7 @@ body {
 }
 
 #phoneNo::-webkit-inner-spin-button, #phoneNo::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -46,7 +35,7 @@ input {
 }
 
 h2 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 hr {
@@ -54,7 +43,7 @@ hr {
 }
 
 *:not(h2) {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 #submit {
@@ -72,4 +61,3 @@ hr {
   padding: 15px 40px;
   border-radius: 20px;
 }
-/*# sourceMappingURL=login.css.map */

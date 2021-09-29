@@ -1,3 +1,16 @@
+*{
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    background-color: #00587A;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #username,#password,#phoneNo{
     border: none;
     border-bottom: 1px solid black;
@@ -10,29 +23,21 @@
 input{ outline: none; }
 
 h2{ font-family: 'Quicksand', sans-serif; }
-
-label,input,p{ font-family: 'Open Sans Condensed', sans-serif; }
+hr{border-color: #0F3057;}
+*:not(h2){ font-family: 'Open Sans Condensed', sans-serif; }
 
 #submit{
-    background-color: transparent;
-    border: 1px solid rgb(193 191 191);
+    background-color: #0F3057;
+    color: white;
+    border: 1px solid #0F3057;
+    border-radius: 10px;
     padding: 5px 10px;
-    box-shadow: -2px -2px 2px #eae5e5, 2px 2px 2px #777474;
 }
 
 #container{
+    background-color: #008891;
     position: fixed;
-    margin : 10% 35% ;
-    border: 1px solid rgb(193 191 191);
+    border: 1px solid #0F3057;
     padding: 15px 40px;
     border-radius: 20px;
-    box-shadow: -5px -5px 5px #eae5e5, 5px 5px 5px #777474;
-}
-
-
-@media only screen and ( max-width : 600px ){
-    #container{
-        margin  : 40px 3px ;
-        padding: 15px 4px;
-    }
 }
