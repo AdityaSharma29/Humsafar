@@ -1,7 +1,25 @@
+
+// ---------------    OVERLAY ----------------------------
+
+
 document.getElementById('close-btn-cnt').addEventListener("click", hideOverlay);
-document.getElementById('show-overlay-btn').addEventListener("click", showOverlay);
-function hideOverlay(){ document.getElementById('overlay-cnt').style.display = 'none'; }
-function showOverlay(){ document.getElementById('overlay-cnt').style.display = 'block'; }
+document.getElementById('show-overlay-btn').addEventListener("click", () => {
+    showOverlay();
+});
+
+function hideOverlay(){ 
+    const ele = document.getElementById('overlay-cnt');
+    ele.classList.add('hide-overlay');
+    ele.classList.remove('show-overlay');
+}
+function showOverlay(){ 
+    const ele = document.getElementById('overlay-cnt');
+    ele.classList.remove('hide-overlay');
+    ele.classList.add('show-overlay');
+}
+
+
+// ------------------- SEARCH ENGINE ------------------------
 
 
 $("body").not($("#search-engine-cnt")).click(function(){
@@ -83,10 +101,10 @@ function display_post_data() {
             data[index].comments.forEach(cmmnt => {
                 
                 placer += `<div class="inner_cmmnt_cnt">
-                                <p>@<strong>${cmmnt.comm_author}</strong> ${cmmnt.comm_text}</p>
-                                <p style="visibility: hidden;" class="comment_id">${cmmnt.comm_id}</p>`;
+                                <p><strong>@${cmmnt.comm_author}</strong> ${cmmnt.comm_text}</p>
+                                <p style="visibility: hidden;height: 0;" class="comment_id">${cmmnt.comm_id}</p>`;
                 placer +=      `<button onclick="like_comment(this.previousElementSibling.innerHTML)"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button><button onclick="reply_to_comment(this.previousElementSibling, this.nextElementSibling.innerHTML)"><i class="fa fa-reply" aria-hidden="true"></i></button>
-                                <p style="visibility: hidden;" class="comment_username">${cmmnt.comm_author}</p>
+                                <p style="visibility: hidden;height: 0;" class="comment_username">${cmmnt.comm_author}</p>
                                 
                                 <div class="reply-section">`;
                                 console.log(cmmnt.reply.length);  
@@ -98,10 +116,10 @@ function display_post_data() {
                         console.log(element);
 
                         placer +=      `<div>
-                                            <p>@<strong>${element.replier_username}</strong> to @<strong>${element.replying_to}</strong> ${element.replier_text}</p>
-                                            <p style="visibility: hidden;" class="comment_id">${cmmnt.comm_id}</p>`;
+                                            <p><strong>@${element.replier_username}</strong> to <strong>@${element.replying_to}</strong> ${element.replier_text}</p>
+                                            <p style="visibility: hidden;height: 0;" class="comment_id">${cmmnt.comm_id}</p>`;
                         placer +=          `<button onclick="reply_to_comment(this, this.nextElementSibling.innerHTML)"><i class="fa fa-reply" aria-hidden="true"></i></button>
-                                            <p style="visibility: hidden;" class="replying_author">${element.replier_username}</p>
+                                            <p style="visibility: hidden;height: 0;" class="replying_author">${element.replier_username}</p>
                                         </div>`
                     })
                 }
@@ -113,7 +131,6 @@ function display_post_data() {
             document.getElementById('show-comment').innerHTML = placer;
 
         }
-
 
     })
 }
